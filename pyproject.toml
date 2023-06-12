@@ -10,12 +10,8 @@ packages = [{ include = "poetry_test" }]
 python = "^3.11"
 requests = "^2.31.0"
 ibis-framework = [
-    { version = "^5.1.0", extras = [
-        "duckdb",
-    ] },
-    { version = "^5.1.0", extras = [
-        "postgres",
-    ], optional = true },
+    { version = "^5.1.0", extras = [ "duckdb" ] },
+    { version = "^5.1.0", extras = [ "postgres" ], optional = true },
 ]
 
 [tool.poetry.extras]
